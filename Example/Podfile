@@ -1,0 +1,6 @@
+use_frameworks!
+target 'XCQFoundation_Tests' do
+  pod 'XCQFoundation', :path => '../'
+  
+  
+end
