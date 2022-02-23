@@ -1,0 +1,6 @@
+framework module XCQFoundation {
+  umbrella header "XCQFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

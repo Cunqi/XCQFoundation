@@ -1,0 +1,16 @@
+PODS:
+  - XCQFoundation (0.1.0)
+
+DEPENDENCIES:
+  - XCQFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  XCQFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XCQFoundation: e8e4e5b605a83cee20db602401b2c1e091c7a903
+
+PODFILE CHECKSUM: cd1a475fc5d7457e907a6eefc57b617b9ff8f9a4
+
+COCOAPODS: 1.11.2

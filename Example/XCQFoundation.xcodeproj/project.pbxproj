@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		34C313307FC67A7A64DB0042 /* Pods_XCQFoundation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBF3936EE46DF2E686372D1 /* Pods_XCQFoundation_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		3C15C83B27C6F3EA00EA5AB2 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15C83A27C6F3EA00EA5AB2 /* StringTests.swift */; };
+		607FACEC1AFB9204008FA782 /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* CollectionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36C252BDF631753157C199C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3BE1BF98F1CC96DC762B0FEA /* XCQFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XCQFoundation.podspec; path = ../XCQFoundation.podspec; sourceTree = "<group>"; };
+		36C252BDF631753157C199C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3BE1BF98F1CC96DC762B0FEA /* XCQFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XCQFoundation.podspec; path = ../XCQFoundation.podspec; sourceTree = "<group>"; };
+		3C15C83A27C6F3EA00EA5AB2 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* XCQFoundation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCQFoundation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* CollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTests.swift; sourceTree = "<group>"; };
 		8EBF3936EE46DF2E686372D1 /* Pods_XCQFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCQFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95032CBA5D18D53FE2B81E2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		95032CBA5D18D53FE2B81E2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		99F7FD1A69BEE582BEAD7118 /* Pods-XCQFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCQFoundation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XCQFoundation_Tests/Pods-XCQFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F5EAA016BC508B142B28B9 /* Pods-XCQFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCQFoundation_Tests.release.xcconfig"; path = "Target Support Files/Pods-XCQFoundation_Tests/Pods-XCQFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +43,6 @@
 				99F7FD1A69BEE582BEAD7118 /* Pods-XCQFoundation_Tests.debug.xcconfig */,
 				C4F5EAA016BC508B142B28B9 /* Pods-XCQFoundation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -67,8 +68,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* CollectionTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				3C15C83A27C6F3EA00EA5AB2 /* StringTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -131,14 +133,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -147,6 +144,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -218,7 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				3C15C83B27C6F3EA00EA5AB2 /* StringTests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* CollectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +341,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCQFoundation_Example.app/XCQFoundation_Example";
 			};
 			name = Debug;
 		};
@@ -360,7 +358,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCQFoundation_Example.app/XCQFoundation_Example";
 			};
 			name = Release;
 		};
